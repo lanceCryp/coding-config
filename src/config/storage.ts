@@ -2,7 +2,7 @@ import * as path from 'path';
 import * as os from 'os';
 import * as fs from 'fs-extra';
 
-const CONFIG_DIR = path.join(os.homedir(), '.coding-config');
+const CONFIG_DIR = path.join(os.homedir(), '.ai-coding-config');
 const CONFIG_FILE = path.join(CONFIG_DIR, 'config.json');
 
 export interface Config {

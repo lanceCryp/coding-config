@@ -1,10 +1,11 @@
 {
-  "name": "coding-config",
-  "version": "0.1.0",
+  "name": "ai-coding-config",
+  "version": "0.1.1",
   "description": "快速配置国产 AI 平台到主流 AI 编程工具",
+  "author": "Lance Lin <lance.cryp@qq.com>",
   "main": "dist/index.js",
   "bin": {
-    "coding-config": "./dist/index.js"
+    "ai-coding-config": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc",

@@ -10,7 +10,7 @@ import { TOOLS } from './tools';
 const program = new Command();
 
 program
-  .name('coding-config')
+  .name('ai-coding-config')
   .description('快速配置国产 AI 平台到主流 AI 编程工具')
   .version('0.1.0');
 
@@ -18,7 +18,7 @@ program
   .command('init')
   .description('初始化配置')
   .action(async () => {
-    console.log(chalk.cyan.bold('\n🚀 欢迎使用 coding-config！\n'));
+    console.log(chalk.cyan.bold('\n🚀 欢迎使用 ai-coding-config！\n'));
 
     // 步骤 2：选择平台
     const { platform } = await inquirer.prompt([

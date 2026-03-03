@@ -1,4 +1,4 @@
-# coding-config
+# ai-coding-config
 
 快速配置国产 AI 平台到主流 AI 编程工具的 CLI 工具。
 
@@ -28,14 +28,14 @@
 ## 安装
 
 ```bash
-npm install -g coding-config
+npm install -g ai-coding-config
 ```
 
 ## 使用方法
 
 ```bash
 # 初始化配置
-coding-config init
+ai-coding-config init
 ```
 
 按照交互式提示选择平台、输入 API Key、选择工具即可完成配置。
