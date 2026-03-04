@@ -21,9 +21,11 @@
 
 | 工具 | ID | 配置文件 |
 |------|----|----------|
-| Cline | cline | ~/.vscode/settings.json |
-| Cursor | cursor | ~/.cursor/settings.json |
-| Claude Code | claude-code | ~/.claude/config.json |
+| Claude Code | claude-code | ~/.claude/settings.json |
+| OpenCode | opencode | ~/.config/opencode/opencode.json |
+| Codex | codex | ~/.codex/config.toml |
+| Qwen Code | qwen | ~/.qwen/settings.json |
+| Kilo CLI | kilo | ~/.config/kilo/config.json |
 
 ## 安装
 
@@ -67,6 +69,10 @@ npm run dev
   <h3>微信支付</h3>
   <img src="./sponsor/wepay.jpg" alt="微信收款码" width="200"/>
 </div>
+
+## 联系作者
+
+如有问题或建议，欢迎联系作者：lance.cryp@qq.com
 
 ## 许可证
 
