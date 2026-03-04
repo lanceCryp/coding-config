@@ -2,6 +2,8 @@
 
 快速配置国产 AI 平台到主流 AI 编程工具的 CLI 工具。
 
+项目地址: [https://github.com/lanceCryp/coding-config](https://github.com/lanceCryp/coding-config)
+
 ## 功能特性
 
 - 支持智谱 GLM、阿里云百炼、火山引擎方舟等国产 AI 平台
@@ -64,10 +66,10 @@ npm run dev
 
 <div align="center">
   <h3>支付宝</h3>
-  <img src="./sponsor/alipay.jpg" alt="支付宝收款码" width="200"/>
+  <img src="https://raw.githubusercontent.com/lanceCryp/coding-config/main/sponsor/alipay.jpg" alt="支付宝收款码" width="200"/>
   
   <h3>微信支付</h3>
-  <img src="./sponsor/wepay.jpg" alt="微信收款码" width="200"/>
+  <img src="https://raw.githubusercontent.com/lanceCryp/coding-config/main/sponsor/wepay.jpg" alt="微信收款码" width="200"/>
 </div>
 
 ## 联系作者
