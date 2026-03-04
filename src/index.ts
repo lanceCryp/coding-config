@@ -4,9 +4,24 @@ import { Command } from 'commander';
 import inquirer from 'inquirer';
 import chalk from 'chalk';
 import ora from 'ora';
+import qrcode from 'qrcode-terminal';
 import { PLATFORMS } from './platforms';
 import { TOOLS } from './tools';
 import { LocalStorageManager } from './config/storage';
+
+// 赞助信息函数
+function showSponsorInfo(): void {
+  console.log(chalk.yellow('\n💝 感谢支持！'));
+  console.log(chalk.blue('\n用微信扫描以下二维码赞助开发者：\n'));
+  
+  console.log(chalk.blue('支付宝 (Alipay):'));
+  qrcode.generate('https://qr.alipay.com/fkx17818lnt00uxbccps857', {small: true});
+  
+  console.log(chalk.green('\n微信支付 (WeChat Pay):'));
+  qrcode.generate('wxp://f2f0_ZoYUHPocEV5TWOBve6kLc4qvR6cDdKkjT90a3RL3DRbF9-FILt2Z8MF5Xhy5CIh', {small: true});
+  
+  console.log(chalk.gray('\n💡 扫描上方二维码支持项目发展\n'));
+}
 
 const program = new Command();
 const localStorageManager = new LocalStorageManager();
@@ -99,6 +114,10 @@ program
         console.log(chalk.green(`\n✅ 成功切换到 ${PLATFORMS[platform].name}！`));
         console.log(chalk.cyan(`${selectedTool.name} 现在使用 ${PLATFORMS[platform].name} 平台\n`));
         console.log(chalk.gray(`API Key: ${existingPlatformConfig.apiKey.substring(0, 4)}...${existingPlatformConfig.apiKey.slice(-4)}\n`));
+        
+        // 赞助信息
+        showSponsorInfo();
+        
         return; // 结束流程
       } else {
         // 录入新的API Key
@@ -201,6 +220,9 @@ program
     console.log(chalk.green(`\n✅ 配置成功！`));
     console.log(chalk.cyan(`${selectedTool.name} 已配置使用 ${PLATFORMS[platform].name}\n`));
     console.log(chalk.gray(`平台信息已保存，可使用 'ai-coding-config switch' 命令切换平台\n`));
+    
+    // 赞助信息
+    showSponsorInfo();
   });
 
 program
@@ -278,6 +300,9 @@ program
       spinner.stop();
       console.log(chalk.green(`\n✅ 成功切换到 ${PLATFORMS[platform].name}！`));
       console.log(chalk.cyan(`${selectedTool.name} 现在使用 ${PLATFORMS[platform].name} 平台\n`));
+      
+      // 赞助信息
+      showSponsorInfo();
     } catch (error) {
       spinner.stop();
       const errorMessage = error instanceof Error ? error.message : String(error);
@@ -396,6 +421,9 @@ program
       } else {
         console.log(chalk.gray(`请注意：当前活动平台不是 ${PLATFORMS[platform].name}，如需使用新密钥请运行: ai-coding-config switch\n`));
       }
+      
+      // 赞助信息
+      showSponsorInfo();
     } catch (error) {
       spinner.stop();
       const errorMessage = error instanceof Error ? error.message : String(error);

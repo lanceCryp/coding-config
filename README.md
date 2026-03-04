@@ -56,6 +56,18 @@ npm run build
 npm run dev
 ```
 
+## 赞助
+
+如果您觉得这个工具对您有帮助，欢迎赞助支持：
+
+<div align="center">
+  <h3>支付宝</h3>
+  <img src="./sponsor/alipay.jpg" alt="支付宝收款码" width="200"/>
+  
+  <h3>微信支付</h3>
+  <img src="./sponsor/wepay.jpg" alt="微信收款码" width="200"/>
+</div>
+
 ## 许可证
 
 MIT
