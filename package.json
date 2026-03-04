@@ -1,6 +1,6 @@
 {
   "name": "ai-coding-config",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "快速配置国产 AI 平台到主流 AI 编程工具",
   "author": "Lance Lin <lance.cryp@qq.com>",
   "main": "dist/index.js",
